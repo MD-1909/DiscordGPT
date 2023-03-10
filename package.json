@@ -1,0 +1,25 @@
+{
+  "name": "DiscordGPT",
+  "version": "1.0.0",
+  "description": "A Discord Bot that uses the openAI API to provide answers based on the user's messages in a Discord Server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammed-D/DiscordGPT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-D/DiscordGPT/issues"
+  },
+  "homepage": "https://github.com/Mohammed-D/DiscordGPT#discordgpt",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  }
+}
