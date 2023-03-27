@@ -14,7 +14,7 @@ const token = process.env.DISCORD_TOKEN;
 //Async function to query a question to the openAI model
 async function sendQuery(prompt) {
   const response = await openai.createCompletion({
-    model: "text-davinci-003", // The model version of the AI
+    model: "gpt-3.5-turbo", // The model version of the AI
     prompt, // The input query that is sent
     temperature: 0.9, // Value between 0 and 2 that influences the output
     // Lower means more deterministic, while higher means more random
