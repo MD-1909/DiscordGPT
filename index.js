@@ -43,13 +43,15 @@ client.once(Events.ClientReady, (c) => {
 
 // Runs everytime a message is sent in the Discord Server
 client.on(Events.MessageCreate, async (message) => {
-  if (message.content.substring(0, 1) === ".") {
-    // When a message starts with a '.'
-    const prompt = message.content.substring(1); // Remove the '.' from the message
-    const answer = await sendQuery(prompt); // Query the AI
-    client.channels
-      .fetch(message.channelId)
-      .then((channel) => channel.send(answer));
+  try {
+    if (message.content.substring(0, 1) === "." && !message.author.bot) {
+      // When a message starts with a '.' and the author of the message is not a bot
+      const prompt = message.content.substring(1); // Remove the '.' from the message
+      const answer = await sendQuery(prompt); // Query the AI
+      message.reply(answer);
+    }
+  } catch (error) {
+    console.log(error);
   }
 });
 
