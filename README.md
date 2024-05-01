@@ -1,3 +1,8 @@
+**⚠️This code is unusable now since OpenAI has made API access only available to users who pay⚠️**
+
+Check out my [Gemini bot for Discord](https://github.com/MD-1909/DiscordGeminiBot) instead.
+I have also made improvements to that version by using slash commands instead of reading every single message sent in the server.
+
 # DiscordGPT - Overview
 A Discord Bot that uses the openAI API to provide answers based on the user's messages in a Discord Server.
 
